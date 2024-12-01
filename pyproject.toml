@@ -3,9 +3,9 @@ requires = ["setuptools", "setuptools-scm", "wheel", "toml"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "template_python"
+name = "pdf2xls"
 version = "0.1.0"
-description = "template_python"
+description = "convert pdf files to excel"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [
@@ -20,7 +20,9 @@ classifiers = [
 ]
 
 dependencies = [
-    "toml>=0.10.2"
+    "toml>=0.10.2",
+    "pdfplumber>=0.11.4",
+    "openpyxl>=3.1.5"
 ]
 
 [project.optional-dependencies]
@@ -30,12 +32,12 @@ test = [
 ]
 
 [project.urls]
-documentation = "https://github.com/achim0x/"
-repository = "https://github.com/achim0x/"
-tracker = "https://github.com/achim0x/"
+documentation = "https://github.com/achim0x/pdf2xls/"
+repository = "https://github.com/achim0x/pdf2xls/"
+tracker = "https://github.com/achim0x/pdf2xls"
 
 [project.scripts]
-template_python = "template_python.template_python:main"
+pdf2xls= "pdf2xls.pdf2xls:main"
 
 [tool.pytest.ini_options]
 pythonpath = [

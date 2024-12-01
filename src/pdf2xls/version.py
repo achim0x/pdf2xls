@@ -41,7 +41,7 @@ def init_from_metadata():
         list: Tool related information
     """
 
-    my_metadata = meta.metadata('template_python')
+    my_metadata = meta.metadata('pdf2xls')
 
     return \
         my_metadata['Version'], \
